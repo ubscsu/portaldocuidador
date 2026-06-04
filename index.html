@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Cuidador</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gov-bar">
+        <div><strong>Medicina PUC Minas</strong></div>
+        <div class="right-links">
+            <a href="https://www.pucminas.br/destaques/Paginas/default.aspx" target="_blank" rel="noopener noreferrer"><i class="fas fa-users"></i> Portal</a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <img src="contagem-logo.png" alt="Logo Contagem" class="contagem-logo" style="height: 65px; width: auto; max-width: 250px;">
+        
+        <div class="header-brand-wrapper">
+            <img src="puc-logo.ico" alt="Logo PUC Minas" class="header-logo" style="height: 65px; width: auto;">
+            
+            <div class="brand">
+                <h1>Portal do Cuidador</h1>
+                <span>Cuidando de quem cuida</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-banner-container">
+        <button class="slide-btn btn-prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slide-btn btn-next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+
+        <div class="slider-wrapper">
+            <div class="slider-track" id="sliderTrack">
+    
+                <div class="slide-card card-1">
+                    <div>
+                        <h3>Depressão</h3>
+                        <p class="font-bold">O que é?</p>
+                        <ul>
+                            <li>Sentimentos persistentes de tristeza</li>
+                            <li>Falta de interesse em atividades cotidianas</li>
+                            <li>Pode ter causas biológicas, psicológicas e sociais</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="0">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-2">
+                    <div>
+                        <h3>Burnout</h3>
+                        <p class="font-bold">O que é?</p>
+                        <ul>
+                            <li>Esgotamento físico, emocional e mental</li>
+                            <li>Causado pelo estresse crônico</li>
+                            <li>Exaustão extrema devido à sobrecarga</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="1">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-3">
+                    <div>
+                        <h3>Ansiedade, estresse e exaustão</h3>
+                        <p class="font-bold">O que é?</p>
+                        <ul>
+                            <li>Intensa sobrecarga física, emocional e social</li>
+                            <li>Preocupação constante e medo de agravamentos</li>
+                            <li>Esgotamento físico e psicológico</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="2">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-4">
+                    <div>
+                        <h3>Autocuidado</h3>
+                        <p class="font-bold">Cuidar de si para cuidar do outro:</p>
+                        <ul>
+                            <li>Alimentação, hidratação e sono adequados</li>
+                            <li>Prática de exercícios e saúde mental</li>
+                            <li>Exames preventivos e acompanhamento</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="3">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-5">
+                    <div>
+                        <h3>Sinais de alerta para o acamado</h3>
+                        <p class="font-bold">Identificação rápida de riscos:</p>
+                        <ul>
+                            <li>Mudanças repentinas de comportamento e confusão</li>
+                            <li>Alterações graves na respiração e engasgos</li>
+                            <li>Febre, lesões de pele e sinais de desidratação</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="4">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-1">
+                    <div>
+                        <h3>Higiene (acamado e ambiente)</h3>
+                        <p class="font-bold">Prevenção de infecções:</p>
+                        <ul>
+                            <li>Banho no leito e hidratação diária</li>
+                            <li>Limpeza adequada da região íntima</li>
+                            <li>Ventilação e desinfecção do quarto</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="5">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-2">
+                    <div>
+                        <h3>Como evitar feridas (escaras)</h3>
+                        <p class="font-bold">Protegendo a pele do acamado:</p>
+                        <ul>
+                            <li>Mudança de posição a cada 2 horas</li>
+                            <li>Uso de almofadas e colchão piramidal</li>
+                            <li>Inspeção diária de manchas vermelhas</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="6">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-3">
+                    <div>
+                        <h3>Como evitar quedas</h3>
+                        <p class="font-bold">Segurança no leito:</p>
+                        <ul>
+                            <li>Uso de grades laterais na cama</li>
+                            <li>Objetos de uso pessoal ao alcance</li>
+                            <li>Cuidado redobrado ao virar o paciente</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="7">Saiba mais</a>
+                </div>
+
+                <div class="slide-card card-4">
+                    <div>
+                        <h3>Rede de Apoio e Serviços</h3>
+                        <p class="font-bold">Acolhimento na sua região:</p>
+                        <ul>
+                            <li>Saúde Mental e Física (UBS, CAPS)</li>
+                            <li>Assistência e Direitos (CRAS, CREAS, INSS)</li>
+                            <li>Programa Contagem Ativa (Eldorado)</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-ver-conteudo nav-tab-link" data-target="8">Saiba mais</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="main-content-area" class="hidden-area">
+        
+        <div class="regions-bar-wrapper">
+            <div class="regions-bar">
+                <div class="chunk c1"></div>
+                <div class="chunk c2"></div>
+                <div class="chunk c3"></div>
+                <div class="chunk c4"></div>
+            </div>
+        </div>
+
+        <main class="dynamic-content">
+            
+            <div class="content-panel" id="panel-0">
+                <div class="panel-header">
+                    <h2>Depressão: O que é e Sinais</h2>
+                    <p>De acordo com a USPSTF, o Transtorno Depressivo é caracterizado como a presença de sentimentos persistentes de tristeza, de intensidade leve a grave, ou falta de interesse em atividades cotidianas, com duração de pelo menos duas semanas.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-project-diagram"></i> Causas e Fatores de Risco</h3>
+                        <p class="mb-20">A depressão não possui uma única causa. Diversos fatores podem contribuir para seu desenvolvimento:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-dna"></i> Biológicos</h4>
+                                <ul>
+                                    <li>Alterações nos neurotransmissores cerebrais</li>
+                                    <li>Histórico familiar e alterações hormonais</li>
+                                    <li>Doenças crônicas</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-head-side-virus"></i> Psicológicos</h4>
+                                <ul>
+                                    <li>Baixa autoestima e traumas emocionais</li>
+                                    <li>Ansiedade e estresse intenso</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-users"></i> Sociais</h4>
+                                <ul>
+                                    <li>Problemas financeiros e pressão acadêmica ou profissional</li>
+                                    <li>Isolamento social, bullying, luto e violência</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h3><i class="fas fa-brain"></i> Sinais de Alerta</h3>
+                        <p class="mb-20">Fique atento se você se identificar com os seguintes sinais e sintomas:</p>
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                            <li><i class="fas fa-check-circle"></i> Tristeza persistente</li>
+                            <li><i class="fas fa-check-circle"></i> Desinteresse por atividades (anedonia)</li>
+                            <li><i class="fas fa-check-circle"></i> Irritabilidade e pensamentos negativos</li>
+                            <li><i class="fas fa-check-circle"></i> Dificuldade de concentração e esquecimentos</li>
+                            <li><i class="fas fa-check-circle"></i> Alterações no sono e no apetite</li>
+                            <li><i class="fas fa-check-circle"></i> Diminuição da energia</li>
+                            <li><i class="fas fa-check-circle"></i> Isolamento social e abandono do autocuidado</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3><i class="fas fa-stethoscope"></i> Diagnóstico</h3>
+                                <p>O diagnóstico da depressão é clínico, realizado por profissionais da saúde, principalmente psiquiatras e psicólogos.</p>
+                                <p class="mt-10">A avaliação clínica analisa os sintomas apresentados, duração, intensidade, impacto na rotina, e histórico familiar e pessoal.</p>
+                            </div>
+                            <div>
+                                <h3><i class="fas fa-layer-group"></i> Tipos de Depressão</h3>
+                                <ul>
+                                    <li><i class="fas fa-arrow-right"></i> <strong>Transtorno depressivo maior:</strong> episódios intensos.</li>
+                                    <li><i class="fas fa-arrow-right"></i> <strong>Distimia:</strong> depressão persistente e mais leve.</li>
+                                    <li><i class="fas fa-arrow-right"></i> <strong>Depressão pós-parto:</strong> ocorre após o nascimento do bebê.</li>
+                                    <li><i class="fas fa-arrow-right"></i> <strong>Transtorno afetivo sazonal:</strong> relacionada a mudanças sazonais.</li>
+                                    <li><i class="fas fa-arrow-right"></i> <strong>Transtorno bipolar:</strong> episódios depressivos alternados com euforia.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3><i class="fas fa-hand-holding-medical c-orange"></i> Tratamento e Prevenção</h3>
+                                <p class="mb-15">O tratamento deve ser individualizado e pode envolver diferentes abordagens:</p>
+                                <ul>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>Psicoterapia:</strong> Ajuda a compreender emoções e identificar pensamentos negativos.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>Medicamentos:</strong> Antidepressivos auxiliam no equilíbrio dos neurotransmissores cerebrais.</li>
+                                </ul>
+                                <h4 class="font-bold c-orange mt-20"><i class="fas fa-shield-alt"></i> Como prevenir?</h4>
+                                <p>Manter rede de apoio, buscar equilíbrio emocional, dormir adequadamente, praticar atividade física e procurar ajuda precocemente.</p>
+                            </div>
+
+                            <div>
+                                <h3 class="c-red"><i class="fas fa-life-ring"></i> Quando e Onde Buscar Ajuda?</h3>
+                                <p class="mb-15">Se apresentar esses sinais continuamente por mais de 15 dias, afetando a rotina, procure apoio:</p>
+                                <ul style="display: flex; flex-direction: column; gap: 15px;">
+                                    <li>
+                                        <i class="fas fa-hospital c-red" style="font-size: 20px; float: left; margin-right: 15px;"></i> 
+                                        <div>
+                                            <strong>Unidade Básica de Saúde (UBS):</strong><br>
+                                            Você pode agendar consultas com psicólogo na sua UBS.</div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-volume c-red" style="font-size: 20px; float: left; margin-right: 15px;"></i> 
+                                        <div>
+                                            <strong>Centro de Valorização da Vida (CVV):</strong><br>
+                                            Em situações de crise, conte com o apoio do CVV, que atende 24 horas (ligue 188).</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-1">
+                <div class="panel-header">
+                    <h2>Síndrome de Burnout ou Síndrome do Esgotamento Profissional</h2>
+                    <p>De acordo com o Ministério da Saúde, a síndrome de Burnout ou Síndrome do esgotamento profissional é um distúrbio emocional com sintomas de exaustão extrema, estresse e esgotamento físico resultante de situações de trabalho desgastante, que demandam muita competitividade ou responsabilidade. A principal causa da doença é justamente o <strong>excesso de trabalho</strong>. Esta síndrome é comum justamente em profissionais que atuam diariamente sob pressão e com responsabilidades constantes.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-battery-empty"></i> Sintomas Mais Comuns</h3>
+                        <p class="mb-20">A síndrome de Burnout ou, traduzindo do inglês “Síndrome da queima exterior” envolve diversos sintomas, como nervosismo, sofrimentos psicológicos, problemas físicos como dor de barriga, cansaço excessivo e tonturas. Como sintomas iniciais da doença, normalmente, temos o estresse e a falta de sair da cama ou de casa com constância. Outros sintomas são:</p>
+                        
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+                            <li><i class="fas fa-arrow-right"></i> Cansaço excessivo físico e mental</li>
+                            <li><i class="fas fa-arrow-right"></i> Dificuldade de concentração</li>
+                            <li><i class="fas fa-arrow-right"></i> Sentimentos de incompetência</li>
+                            <li><i class="fas fa-arrow-right"></i> Alterações no apetite</li>
+                            <li><i class="fas fa-arrow-right"></i> Sentimentos de fracasso e insegurança</li>
+                            <li><i class="fas fa-arrow-right"></i> Alteração nos batimentos cardíacos</li>
+                            <li><i class="fas fa-arrow-right"></i> Insônia</li>
+                            <li><i class="fas fa-arrow-right"></i> Negatividade constante</li>
+                            <li><i class="fas fa-arrow-right"></i> Dores musculares</li>
+                            <li><i class="fas fa-arrow-right"></i> Pressão alta</li>
+                            <li><i class="fas fa-arrow-right"></i> Sentimentos de derrota e desesperança</li>
+                            <li><i class="fas fa-arrow-right"></i> Fadiga</li>
+                            <li><i class="fas fa-arrow-right"></i> Problemas gastrointestinais</li>
+                        </ul>
+
+                        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3 class="c-red"><i class="fas fa-exclamation-circle"></i> ATENÇÃO</h3>
+                                <p>Vale ressaltar que normalmente esses sintomas surgem de forma leve, mas que ao passar dos dias tendem a piorar. Por esse motivo, muitas pessoas acham que pode ser algo passageiro. Desse modo, para evitar complicações da doença, é essencial buscar apoio profissional assim que notar algum dos sinais.</p>
+                            </div>
+                            <div>
+                                <h3 class="c-red"><i class="fas fa-arrow-trend-down"></i> Sinais de Piora</h3>
+                                <p>Os sinais de piora podem surgir quando a pessoa não segue o tratamento adequado. Com isso, os sintomas se agravam e incluem perda total da motivação e distúrbios gastrointestinais. Nos casos mais graves, a pessoa pode desenvolver uma depressão, que muitas vezes pode ser indicativo de internação para avaliação detalhada e possíveis intervenções médicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box highlight-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            
+                            <div>
+                                <h3><i class="fas fa-user-md c-orange"></i> Diagnóstico e Tratamento</h3>
+                                <p><strong>Diagnóstico:</strong> O diagnóstico é feito por um profissional especialista após análise clínica do paciente, sendo os profissionais mais indicados para detectar o problema e orientar a melhor forma de tratamento o <strong>Psicólogo</strong> e o <strong>Psiquiatra</strong>.</p>
+                                <p class="mt-10"><strong>Tratamento:</strong> O tratamento da síndrome de Burnout é feito basicamente com psicoterapia, podendo envolver medicamentos antidepressivos e/ou ansiolíticos. A atividade física regular e exercícios de relaxamento são fundamentais para controlar o estresse e os demais sintomas da doença.</p>
+                                
+                                <h3 class="mt-25"><i class="fas fa-hospital c-orange"></i> Quem pode me ajudar?</h3>
+                                <p>Amigos próximos e familiares podem ser bons pilares no início, ajudando a reconhecer sinais de que precisa de ajuda. Além dos profissionais de saúde (Psicólogo e o Psiquiatra), no SUS (Sistema Único de Saúde) a <strong>Rede de Atenção Psicossocial (RAPS)</strong> está apta a oferecer, de forma integral e gratuita, todo tratamento, desde o diagnóstico até o tratamento medicamentoso. Os <strong>Centros de Atenção Psicossocial</strong>, um dos serviços que compõe a RAPS, são os locais mais indicados.</p>
+                            </div>
+
+                            <div>
+                                <h3><i class="fas fa-shield-alt c-orange"></i> Prevenção</h3>
+                                <p class="mb-15">A principal forma de previnir essa síndrome é utilizar estratégias para reduzir o estresse a pressão no trabalho. A seguir, alguns exemplos de estratégias:</p>
+                                <ul>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Definir pequenos objetivos durante o dia</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Participar de atividades de lazer</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Fazer atividade física regulares</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Conversar com alguém de confiança</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Evitar contato com pessoas negativas</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Evitar consumo de bebidas alcoólicas, cigarro e outras drogas</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Não se automedicar</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> Descansar adequadamente, com boa noite de sono</li>
+                                </ul>
+                                <div class="mt-15" style="background: #fdf6e3; border-left: 4px solid #0d9488; padding: 10px 15px;">
+                                    <p class="font-bold mb-0" style="color: #0f766e;">O cuidador também precisa ser cuidado!</p>
+                                    <p style="font-size: 13px;">Você não está sozinho(a)!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-2">
+                <div class="panel-header">
+                    <h2>Como Lidar com a Ansiedade, Estresse e Exaustão</h2>
+                    <p>O cuidado contínuo de outra pessoa - especialmente em contextos de doença, dependência ou fragilidade - frequentemente coloca o cuidador em situação de intensa sobrecarga física, emocional e social. Muitos cuidadores assumem múltiplas funções simultaneamente, conciliando trabalho, família, tarefas domésticas e assistência integral ao paciente, o que favorece o desenvolvimento de ansiedade, estresse crônico e exaustão emocional. Esse fenômeno é conhecido como "sobrecarga do cuidador" e pode comprometer tanto a saúde mental quanto a qualidade do cuidado oferecido.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-brain"></i> A Sobrecarga do Cuidador</h3>
+                        <p class="mb-20">Muitos cuidadores assumem múltiplas funções simultaneamente, conciliando trabalho, família, tarefas domésticas e assistência integral ao paciente, o que favorece o desenvolvimento de:</p>
+                        
+                        <ul>
+                            <li class="mb-20"><i class="fas fa-arrow-right"></i> <div><strong>Ansiedade:</strong> Relacionada à preocupação constante com o estado de saúde do outro, ao medo de agravamentos, à insegurança diante das responsabilidades e à sensação de não conseguir atender todas as demandas.</div></li>
+                            <li class="mb-20"><i class="fas fa-arrow-right"></i> <div><strong>Estresse:</strong> O estresse prolongado ativa continuamente mecanismos fisiológicos de alerta, aumentando sintomas como irritabilidade, insônia, fadiga, dores musculares, dificuldade de concentração e alterações do humor.</div></li>
+                            <li><i class="fas fa-arrow-right"></i> <div><strong>Exaustão Emocional:</strong> Quando não há estratégias adequadas de enfrentamento, surge a exaustão emocional, caracterizada por esgotamento físico e psicológico, sensação de incapacidade, perda de motivação e isolamento social.</div></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-box">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Sinais e Sintomas de Alerta</h3>
+                        <p class="mb-20">O estresse e a exaustão diminuem sua energia, paciência e capacidade de cuidar. Fique atento aos sinais:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-head-side-virus"></i> Emocionais e Mentais</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Ansiedade, preocupação excessiva</li>
+                                    <li><i class="fas fa-check-circle"></i> Irritabilidade, impaciência</li>
+                                    <li><i class="fas fa-check-circle"></i> Tristeza, choro fácil</li>
+                                    <li><i class="fas fa-check-circle"></i> Sensação de culpa ou inadequação</li>
+                                    <li><i class="fas fa-check-circle"></i> Desânimo, falta de motivação</li>
+                                    <li><i class="fas fa-check-circle"></i> Dificuldade de concentração e memória</li>
+                                    <li><i class="fas fa-check-circle"></i> Sentimento de solidão e isolamento</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-heartbeat"></i> Físicos</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Cansaço constante e exaustão</li>
+                                    <li><i class="fas fa-check-circle"></i> Dores no corpo (cabeça, costas, pescoço)</li>
+                                    <li><i class="fas fa-check-circle"></i> Tensão muscular e Queda da imunidade</li>
+                                    <li><i class="fas fa-check-circle"></i> Alterações no sono (insônia ou sono não reparador)</li>
+                                    <li><i class="fas fa-check-circle"></i> Mudanças no apetite / Problemas gastrointestinais</li>
+                                    <li><i class="fas fa-check-circle"></i> Taquicardia e sensação de aperto no peito</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            
+                            <div>
+                                <h3><i class="fas fa-spa c-orange"></i> O Que Fazer Para Cuidar de Você</h3>
+                                <p class="mb-15">Lidar com essa realidade exige reconhecer que o cuidador também necessita de cuidado. O suporte psicológico e práticas de autocuidado são cruciais:</p>
+                                <ul>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>1. Peça e aceite ajuda:</strong> Compartilhe responsabilidades. Dividir tarefas alivia a sobrecarga.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>2. Reserve tempo para você:</strong> Mesmo que sejam 15 minutos por dia, faça algo que te dê prazer e relaxe.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>3. Cuide do seu corpo:</strong> Alimente-se bem, hidrate-se, pratique atividade física leve e mantenha rotina de sono.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>4. Busque apoio emocional:</strong> Converse com alguém de confiança ou procure acompanhamento psicológico.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>5. Conheça seus limites:</strong> Você não precisa dar conta de tudo. Saber dizer "não" e fazer pausas também é cuidar.</li>
+                                    <li><i class="fas fa-check" style="color: #0284c7; margin-right: 8px;"></i> <strong>6. Busque orientação profissional:</strong> Profissionais de saúde fortalecem sua rede de apoio.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="c-red"><i class="fas fa-user-md"></i> Procure Ajuda Profissional Se:</h3>
+                                <p class="mb-15">Se esses sinais forem frequentes e intensos, podem levar à exaustão emocional (síndrome de burnout), depressão e adoecimento:</p>
+                                <ul>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Tristeza intensa que não passa</li>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Sensação de desespero ou descontrole</li>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Insônia persistente</li>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Pensamentos de desistir ou de se machucar</li>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Exaustão extrema que interfere na vida diária</li>
+                                    <li><i class="fas fa-triangle-exclamation c-red"></i> Crises de ansiedade frequentes</li>
+                                </ul>
+                                <div class="mt-20" style="background: #fee2e2; border-left: 4px solid #e11d48; padding: 15px;">
+                                    <p class="font-bold c-red mb-0">VOCÊ IMPORTA. SUA SAÚDE IMPORTA. VOCÊ NÃO ESTÁ SOZINHO(A).</p>
+                                    <p style="font-size: 13px; color: #9f1239; margin-top: 5px;">Buscar ajuda é um ato de coragem e amor.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-3">
+                <div class="panel-header">
+                    <h2>Autocuidado: Cuidar de si para continuar cuidando do outro</h2>
+                    <p>O ato de cuidar exige dedicação física, emocional e mental. O autocuidado não deve ser visto como egoísmo, mas como uma necessidade. Manter a própria saúde é essencial para oferecer um cuidado de qualidade, reduzir o estresse e prevenir a síndrome de burnout.<!--[cite: 17] --></p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-apple-whole"></i> Pilares do Dia a Dia</h3>
+                        <p class="mb-20">Pequenas atitudes na rotina fazem uma diferença enorme na disposição do cuidador:<!--[cite: 17] --></p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-utensils"></i> Alimentação</h4>
+                                <p style="font-size: 14px;">Priorize alimentos in natura (frutas, verduras, legumes e proteínas) e evite o consumo excessivo de produtos ultraprocessados.<!--[cite: 17] --></p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-glass-water"></i> Hidratação</h4>
+                                <p style="font-size: 14px; margin-bottom: 10px;">A recomendação média é de <strong>35 mL de água por quilo</strong> de peso corporal ao dia (exemplo: uma pessoa de 70 kg necessita de cerca de 2,4 litros diários).<!--[cite: 17] --></p>
+                                <p style="font-size: 14px;">Para calcular de acordo com seu peso, <a href="https://hidrapure.com/blogs/news/quantos-litros-de-agua-devemos-ingerir-por-dia" target="_blank" style="color: #0284c7; text-decoration: underline; font-weight: 600;">clique aqui</a> e acesse a calculadora digital.<!--[cite: 17] --></p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-bed"></i> Sono</h4>
+                                <p style="font-size: 14px;">Adultos devem dormir entre <strong>7 e 9 horas</strong> por noite em um ambiente favorável para garantir a recuperação física e mental, além de melhorar a concentração e o humor.<!--[cite: 17] --></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3><i class="fas fa-running"></i> Exercícios Físicos</h3>
+                                <p>A Organização Mundial da Saúde (OMS) recomenda pelo menos <strong>150 minutos</strong> de atividade física moderada por semana.<!--[cite: 17] --></p>
+                                <ul class="mt-15 mb-15">
+                                    <li><i class="fas fa-arrow-right"></i> Caminhadas, dança ou bicicleta.<!--[cite: 17] --></li>
+                                    <li><i class="fas fa-arrow-right"></i> Exercícios em casa com vídeos do YouTube (alongamento, yoga, pilates e mobilidade).<!--[cite: 17] --></li>
+                                </ul>
+                                
+                                <!-- Vídeos do YouTube Embutidos -->
+                                <!-- Vídeos do YouTube (Miniaturas Clicáveis para contornar bloqueio) -->
+                                <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                                    
+                                    <!-- Vídeo 1 -->
+                                    <a href="https://www.youtube.com/watch?v=o0cyRDLV7tg" target="_blank" style="position: relative; display: block; border-radius: 8px; overflow: hidden; height: 210px; background: #000; text-decoration: none; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                        <img src="https://img.youtube.com/vi/o0cyRDLV7tg/hqdefault.jpg" alt="Vídeo de Exercício 1" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.75; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
+                                        
+                                        <!-- Ícone do YouTube -->
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; background: white; z-index: 1;"></div>
+                                        <i class="fab fa-youtube" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ff0000; font-size: 65px; z-index: 2;"></i>
+                                        
+                                        <div style="position: absolute; bottom: 10px; left: 15px; color: white; font-weight: bold; text-shadow: 1px 1px 3px black; font-size: 14px; z-index: 2;">
+                                            Assistir no YouTube <i class="fas fa-external-link-alt" style="font-size: 12px; margin-left: 5px;"></i>
+                                        </div>
+                                    </a>
+
+                                    <!-- Vídeo 2 -->
+                                    <a href="https://www.youtube.com/watch?v=Gs7H9oRGeiY" target="_blank" style="position: relative; display: block; border-radius: 8px; overflow: hidden; height: 210px; background: #000; text-decoration: none; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                                        <img src="https://img.youtube.com/vi/Gs7H9oRGeiY/hqdefault.jpg" alt="Vídeo de Exercício 2" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.75; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
+                                        
+                                        <!-- Ícone do YouTube -->
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; background: white; z-index: 1;"></div>
+                                        <i class="fab fa-youtube" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #ff0000; font-size: 65px; z-index: 2;"></i>
+                                        
+                                        <div style="position: absolute; bottom: 10px; left: 15px; color: white; font-weight: bold; text-shadow: 1px 1px 3px black; font-size: 14px; z-index: 2;">
+                                            Assistir no YouTube <i class="fas fa-external-link-alt" style="font-size: 12px; margin-left: 5px;"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3><i class="fas fa-spa"></i> Saúde Mental</h3>
+                                <p>A saúde mental precisa ser acompanhada com extrema atenção. Sentimentos persistentes de tristeza, irritação, desânimo ou exaustão emocional não devem ser ignorados.<!--[cite: 17] --></p>
+                                <p class="mt-10">Compartilhar tarefas, conversar com profissionais de saúde ou participar de grupos de apoio diminui a sensação de isolamento.<!--[cite: 17] --></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <h3><i class="fas fa-stethoscope c-orange"></i> Prevenção e Acompanhamento da Saúde</h3>
+                        <p class="mb-20">Mesmo com a rotina intensa, o cuidador não deve deixar de realizar consultas e exames preventivos para identificar precocemente problemas de saúde:<!--[cite: 17] --></p>
+                        
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Aferição regular da pressão arterial<!--[cite: 17] --></li>
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Controle da glicemia e colesterol<!--[cite: 17] --></li>
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Atualização da carteira de vacinação<!--[cite: 17] --></li>
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Exames de rastreamento (Mamografia)<!--[cite: 17] --></li>
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Exame preventivo do colo do útero (Papanicolau)<!--[cite: 17] --></li>
+                            <li><i class="fas fa-check-circle" style="color: #0d9488;"></i> Rastreamento de câncer colorretal<!--[cite: 17] --></li>
+                        </ul>
+
+                        <p class="mt-20" style="font-size: 14.5px; color: #475569;">
+                            Os exames preventivos variam conforme idade, sexo e histórico de saúde. Por isso, é importante manter acompanhamento regular com profissionais de saúde para definir quais rastreamentos devem ser realizados em cada fase da vida.<!--[cite: 17] -->
+                        </p>
+                        
+                        <div class="mt-20" style="background: #f0fdfa; border-left: 4px solid #0d9488; padding: 15px;">
+                            <p class="font-bold mb-0" style="color: #0f766e;">Lembre-se:</p>
+                            <p style="font-size: 14px; color: #115e59; margin-top: 5px;">Mais do que uma escolha, cuidar de si é parte importante do processo de cuidar do outro.<!--[cite: 17] --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-4">
+                <div class="panel-header">
+                    <h2>Sinais de Alerta para o Acamado</h2>
+                    <p>Os principais sinais de alerta para um acamado incluem mudanças repentinas de comportamento, febre, alterações na respiração e lesões de pele. Pacientes restritos ao leito muitas vezes encontram barreiras para comunicar dor ou desconforto, tornando a observação ativa do cuidador o pilar principal para evitar intercorrências graves.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-eye"></i> Monitoramento Clínico Diário</h3>
+                        <p class="mb-25">Procure orientação ou ajuda imediata ao notar qualquer um destes sinais e sintomas divididos pelos sistemas do corpo:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px;">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-hand-holding-medical"></i> Pele e Hidratação</h4>
+                                <ul>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Lesões por pressão (escaras)</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Bolhas ou feridas inesperadas</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Pele muito seca (sinal de desidratação)</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-lungs"></i> Respiração e Deglutição</h4>
+                                <ul>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Falta de ar ou cansaço incomum</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Respiração rápida ou ruidosa</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Tosse constante com secreção</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Engasgos frequentes na alimentação</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-notes-medical"></i> Estado Geral e Eliminações</h4>
+                                <ul>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Urina escura ou com cheiro forte</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Febre alta ou persistente</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Pulso desregulado ou muito rápido</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Fraqueza extrema ou apatia súbita</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-head-side-slashed"></i> Comportamento e Mente</h4>
+                                <ul>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Mudanças repentinas de comportamento</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Confusão mental súbita</li>
+                                    <li><i class="fas fa-circle-exclamation" style="color: #ea580c;"></i> Desorientação de tempo ou espaço</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <div>
+                                <h3 class="c-red"><i class="fas fa-ambulance"></i> Emergências Graves (Ligue 192)</h3>
+                                <p class="mb-15">Acione imediatamente o Serviço de Atendimento Móvel de Urgência (SAMU) se houver risco de vida imediato, manifestado por:</p>
+                                <ul>
+                                    <li><i class="fas fa-angle-right" style="color: #e11d48;"></i> Dificuldade extrema para respirar ou coloração azulada nos lábios e unhas.</li>
+                                    <li><i class="fas fa-angle-right" style="color: #e11d48;"></i> Perda súbita de consciência ou desmaio sem resposta a chamados.</li>
+                                    <li><i class="fas fa-angle-right" style="color: #e11d48;"></i> Engasgo com bloqueio total das vias aéreas (sufocamento).</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3><i class="fas fa-house-user c-orange"></i> Manejo e Rede de Atenção Domiciliar</h3>
+                                <p class="mb-15">Para alterações graduais ou sinais clínicos em evolução (como urina escura, início de vermelhidão na pele ou desidratação), utilize a rede de suporte:</p>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-check" style="color: #0d9488; margin-top: 4px;"></i> 
+                                        <div>
+                                            <strong>Unidade Básica de Saúde (UBS):</strong> Faça contato com o posto de referência para relatar as mudanças e solicitar uma visita da equipe de Saúde da Família.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-check" style="color: #0d9488; margin-top: 4px;"></i> 
+                                        <div>
+                                            <strong>Serviço de Atenção Domiciliar (SAD):</strong> Caso o paciente já seja acompanhado por programas como o "Melhor em Casa", contate o número direto da equipe para agendar uma avaliação multidisciplinar ou suporte em curativos.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-5">
+                <div class="panel-header">
+                    <h2>Higiene: Acamado e Ambiente</h2>
+                    <p>Manter o corpo limpo evita infecções, mau cheiro e coceiras, enquanto um quarto limpo ajuda a pessoa a não contrair doenças.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-hands-bubbles"></i> Higiene da Pessoa Acamada</h3>
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;" class="mt-20">
+                            <li>
+                                <i class="fas fa-shower" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Banho no leito todos os dias:</strong> Use bacia com água morna, sabonete neutro e toalha macia.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-scrubber" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Limpeza profunda:</strong> Lave bem as dobras do corpo (pescoço, axilas, virilha e entre os dedos).</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-tooth" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Saúde bucal:</strong> Escove os dentes ou limpe a boca com gaze úmida após as refeições.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-cut" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Cuidados pessoais:</strong> Corte as unhas sem deixar arestas e penteie os cabelos.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-venus-mars" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Região íntima:</strong> Lave da frente para trás (nas mulheres) e seque muito bem para evitar assaduras.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <h3><i class="fas fa-broom c-orange"></i> Higiene do Ambiente</h3>
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;" class="mt-20">
+                            <li>
+                                <i class="fas fa-wind" style="color: #ea580c; margin-top: 4px;"></i> 
+                                <div><strong>Ventilação:</strong> Areje o quarto todos os dias (abra a janela por 15 minutos).</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-bed" style="color: #ea580c; margin-top: 4px;"></i> 
+                                <div><strong>Roupa de cama:</strong> Troque lençóis, fronhas e cobertores a cada 2 ou 3 dias, ou sempre que estiver suja ou molhada.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-pump-soap" style="color: #ea580c; margin-top: 4px;"></i> 
+                                <div><strong>Limpeza do chão:</strong> Lave com água e álcool ou água sanitária diluída 2x por semana.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-trash-can" style="color: #ea580c; margin-top: 4px;"></i> 
+                                <div><strong>Descarte:</strong> Tenha um saco de lixo com tampa perto da cama para curativos, luvas descartáveis ou fraldas usadas.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-6">
+                <div class="panel-header">
+                    <h2>Como Evitar Feridas na Pele (Escaras)</h2>
+                    <p>Escaras são machucados que aparecem onde o osso fica pressionado contra a cama (costas, calcanhar, quadril e nuca), e podem infeccionar gravemente.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-clipboard-list"></i> Plano de Ação Diário</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;" class="mt-20">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-clock"></i> A cada 2 horas</h4>
+                                <p style="font-size: 14px; margin-bottom: 0;"><strong>Mudar a posição do corpo:</strong> Alivia a pressão (dia e noite).</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-mattress-pillow"></i> Ao mudar de posição</h4>
+                                <p style="font-size: 14px; margin-bottom: 0;"><strong>Usar almofadas ou travesseiros:</strong> Separa as áreas de osso do colchão.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-bed-pulse"></i> 24 horas por dia</h4>
+                                <p style="font-size: 14px; margin-bottom: 0;"><strong>Colchão piramidal:</strong> O tipo "caixa de ovo" ajuda a distribuir o peso do corpo.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-pump-medical"></i> 1x ao dia</h4>
+                                <p style="font-size: 14px; margin-bottom: 0;"><strong>Hidratar a pele:</strong> O uso de loção ou óleo deixa a pele mais resistente.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-search"></i> Durante o banho</h4>
+                                <p style="font-size: 14px; margin-bottom: 0;"><strong>Verificar a pele:</strong> Permite achar vermelhidão antes que vire uma ferida.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box" style="border-left: 5px solid #e11d48;">
+                        <h3 class="c-red"><i class="fas fa-triangle-exclamation"></i> Sinais de Alerta</h3>
+                        <p>Fique atento a qualquer <strong>mancha vermelha que não some em 30 minutos</strong>, pele muito quente ou presença de bolhas. Nestes casos, comunique imediatamente um enfermeiro ou médico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-7">
+                <div class="panel-header">
+                    <h2>Como Evitar Quedas</h2>
+                    <p>Mesmo na cama, a pessoa pode tentar sair sozinha e cair, o que pode quebrar ossos e causar machucados graves. A segurança na movimentação e no ambiente deve ser prioridade.</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-shield-alt"></i> Medidas de Segurança do Ambiente</h3>
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;" class="mt-20">
+                            <li>
+                                <i class="fas fa-check-circle" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Grades laterais:</strong> Mantenha-as na cama, mas sempre com abertura para a pessoa sair em caso de emergência.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Apoio de solo:</strong> Utilize tapete antiderrapante ao lado da cama, caso o paciente levante.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Comunicação:</strong> Deixe uma campainha ao alcance da mão para a pessoa chamar antes de tentar se levantar.</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Objetos próximos:</strong> Não deixe objetos que atraem a pessoa (óculos, água, remédio, celular) longe. Deixe tudo perto!</div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle" style="color: #0284c7; margin-top: 4px;"></i> 
+                                <div><strong>Restrição médica:</strong> Se houver tontura ou confusão mental aguda, use faixas de contenção noturna apenas com orientação médica.</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box highlight-box" style="border-left: 5px solid #ea580c;">
+                        <h3 class="c-orange"><i class="fas fa-hands-holding"></i> Cuidado Redobrado: Movimentação</h3>
+                        <p class="mb-0">Quando for dar banho ou trocar a fralda, <strong>nunca vire as costas</strong> para a pessoa acamada. Acostume-se a segurar o paciente com uma mão enquanto pega o material necessário com a outra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-panel" id="panel-8">
+                <div class="panel-header">
+                    <h2>Rede de Apoio: Um cuidado que acolhe</h2>
+                    <p>O cuidado contínuo pode gerar sobrecarga, especialmente quando o cuidador tenta lidar sozinho com todas as responsabilidades. Ter pessoas e serviços com quem contar reduz a sensação de isolamento. Buscar ajuda não significa fraqueza, mas reconhecer que cuidar também exige suporte!</p>
+                </div>
+                
+                <div class="flex-col-gap">
+                    <div class="info-box">
+                        <h3><i class="fas fa-stethoscope"></i> Saúde e Apoio Emocional</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;" class="mt-20">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-hospital"></i> UBS CSU - Eldorado</h4>
+                                <p style="font-size: 14px;"><strong>Endereço:</strong> Rua Portugal, nº 50 - Eldorado, Contagem<br><strong>Telefone:</strong> (31) 3353-3548</p>
+                                <p style="font-size: 13px; color: #475569;">Atendimento médico, psicológico, acompanhamento multiprofissional e orientação sobre saúde mental. Dica: Sinalize suas necessidades ao Agente Comunitário de Saúde!</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-brain"></i> CAPS III - Adulto</h4>
+                                <p style="font-size: 14px;"><strong>Endereço:</strong> R. Me. Mar. Fontanaresa, nº 106 - Eldorado<br><strong>Telefone:</strong> (31) 3355-1558</p>
+                                <p style="font-size: 13px; color: #475569;">Assistência em saúde mental para pessoas em sofrimento emocional, apoio em crises, grupos terapêuticos e atendimento psiquiátrico.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-phone-volume"></i> CVV - Centro de Valorização da Vida</h4>
+                                <p style="font-size: 14px;"><strong>Telefone:</strong> 188 (Ligação gratuita) - Atendimento 24h<br><strong>Site:</strong> cvv.org.br</p>
+                                <p style="font-size: 13px; color: #475569;">Apoio emocional gratuito e sigiloso para pessoas que precisam conversar, com atendimento por telefone, chat ou e-mail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h3><i class="fas fa-balance-scale"></i> Assistência Social e Direitos</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;" class="mt-20">
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-hands-holding-child"></i> CRAS Eldorado</h4>
+                                <p style="font-size: 14px;"><strong>Endereço:</strong> R. Buganville, 52 - Eldorado<br><strong>Telefone:</strong> (31) 3911-6774</p>
+                                <p style="font-size: 13px; color: #475569;">Prevenção de vulnerabilidade. Orienta sobre CadÚnico, Bolsa Família, BPC/LOAS, tarifa social de energia e oferece apoio por assistente social.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-user-shield"></i> CREAS</h4>
+                                <p style="font-size: 14px;"><strong>Endereço:</strong> Av. José Faria da Rocha, 4687 - Eldorado<br><strong>Telefone:</strong> (31) 3352-5684</p>
+                                <p style="font-size: 13px; color: #475569;">Atende situações de maior vulnerabilidade, violação de direitos, casos de violência ou negligência, oferecendo proteção especializada e orientação jurídica.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold c-orange"><i class="fas fa-file-contract"></i> INSS</h4>
+                                <p style="font-size: 14px;"><strong>Endereço:</strong> R. Bernardo Monteiro, 400 - Centro, Contagem<br><strong>Telefone:</strong> (31) 3911-5012</p>
+                                <p style="font-size: 13px; color: #475569;">Acesso a benefícios previdenciários e assistenciais: auxílio-doença, BPC, aposentadorias, salário-maternidade e pensão por morte.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box highlight-box" style="border-left: 5px solid #0284c7;">
+                        <h3 class="c-orange"><i class="fas fa-running"></i> Programa Contagem Ativa (Regional Eldorado)</h3>
+                        <p class="mb-20">Programe-se para participar das atividades físicas gratuitas oferecidas na sua região. O lazer e a atividade física são fundamentais para o cuidador!</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; font-size: 13px;">
+                            
+                            <div style="background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <strong style="color: #0284c7; font-size: 14px;">UBS CSU - Eldorado</strong><br>
+                                <ul style="margin-top: 8px; padding-left: 0;">
+                                    <li><strong>Ativ. Física:</strong> Seg (14h-17h) | Ter/Qui (7h-8h)</li>
+                                    <li><strong>Artesanato:</strong> Seg/Sab (14h-17h) | Ter/Qui (7h-8h)</li>
+                                    <li><strong>Tambores:</strong> Ter/Qui (13h-17h)</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <strong style="color: #0284c7; font-size: 14px;">Treino Funcional</strong><br>
+                                <ul style="margin-top: 8px; padding-left: 0;">
+                                    <li><strong>Paróq. Santa Cruz:</strong> Ter/Qui (7h-9h)</li>
+                                    <li><strong>Big Shopping:</strong> Seg/Qua (7h-8h)</li>
+                                    <li><strong>Praça do Soteco:</strong> Ter/Qui (7h-8h)</li>
+                                    <li><strong>Campo Cruz Azul:</strong> Seg/Qua (7h-8h)</li>
+                                    <li><strong>CSU Eldorado:</strong> Seg/Qua (7h-8h)</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <strong style="color: #0284c7; font-size: 14px;">Pilates e Forró</strong><br>
+                                <ul style="margin-top: 8px; padding-left: 0;">
+                                    <li><strong>Pilates (NS da Conceição):</strong> Seg/Qua (14h-16h)</li>
+                                    <li><strong>Pilates Solo (CSU):</strong> Ter/Qui (7h-9h | 14h-16h)</li>
+                                    <li><strong>Forró (Paróq. Santa Cruz):</strong> Terça (16h-17h)</li>
+                                    <li><strong>Forró (Big Shopping):</strong> Seg/Ter/Qui (20h-22h)</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: #ffffff; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <strong style="color: #0284c7; font-size: 14px;">Dança, Ballet e Step</strong><br>
+                                <ul style="margin-top: 8px; padding-left: 0;">
+                                    <li><strong>Dança (Praça da Glória):</strong> Ter/Qui (19h-20h)</li>
+                                    <li><strong>Dança (Teleférico):</strong> Seg/Qua (19h-20h)</li>
+                                    <li><strong>Ballet (Santuário NS Apar.):</strong> Ter/Qui (8h-11h)</li>
+                                    <li><strong>Step (Paróq. Santa Cruz):</strong> Seg/Qua (19h-20h)</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <section style="padding: 60px 20px; background-color: #f4f7f6;">
+        <div id="cep-section" class="cep-container">
+            <h3><i class="fas fa-map-marker-alt" style="color: #ea580c; margin-right: 10px;"></i>Você é do Eldorado e precisa de apoio?</h3>
+            <p>Informe seu CEP abaixo para confirmarmos se o seu endereço é atendido pela UBS Eldorado.</p>
+            
+            <div class="input-group">
+                <input type="text" id="cep-input" class="form-control" placeholder="Ex: 32310-500" maxlength="9">
+                <button class="btn-primary btn-inline" onclick="verificarCEP()">Verificar Cobertura</button>
+            </div>
+            <p id="cep-msg" style="display: none;"></p>
+        </div>
+
+        <div id="form-section" class="form-container" style="display: none; margin-top: 30px;">
+            <h3><i class="fas fa-clipboard-check" style="color: #0d9488; margin-right: 10px;"></i>Ótimo! Sua região é atendida.</h3>
+            <p>Preencha os dados abaixo para que nossa equipe entre em contato o mais breve possível.</p>
+            
+            <form id="atendimento-form" onsubmit="enviarFormulario(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required
+                               pattern="^\s*[a-zA-ZÀ-ÿ]+(?:\s+[a-zA-ZÀ-ÿ]+)+\s*$"
+                               oninvalid="this.setCustomValidity('Por favor, informe seu nome e sobrenome completo.')"
+                               oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Celular / WhatsApp</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(31) 99999-9999" maxlength="15" required
+                               pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$"
+                               oninvalid="this.setCustomValidity('Por favor, informe um número válido com DDD.')"
+                               oninput="this.setCustomValidity('')">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo</label>
+                    <input type="text" id="endereco" class="form-control" placeholder="Rua, Número, Bairro, Complemento" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Como podemos te ajudar?</label>
+                    <textarea id="mensagem" class="form-control" placeholder="Descreva brevemente sua necessidade..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Enviar Solicitação</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="contagem-brasao.png" alt="Brasão de Contagem" class="footer-logo" style="height: 80px; width: auto; max-width: 200px;">
+            
+            <div class="footer-content">
+                <strong>Portal do Cuidador</strong>
+                <p>Ana Luísa Cardoso Ameno<br>Maria Clara de Moura Oliveira<br>Mariana Macedo Lopes<br>Nicole Cunha Baia<br>Valquíria Dellorto Júnior</p>
+            </div>
+            
+            <img src="puc-logo.ico" alt="Logo PUC Minas" class="footer-logo" style="height: 80px; width: auto; max-width: 200px;">
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("6_2efX-jj1pWMp78k");
+        })();
+    </script>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

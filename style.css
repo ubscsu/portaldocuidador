@@ -1,0 +1,351 @@
+/* CONFIGURAÇÕES GERAIS */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background-color: #f4f7f6; color: #334155; overflow-x: hidden; line-height: 1.6; }
+a { text-decoration: none; transition: all 0.3s ease; }
+
+/* UTILITY CLASSES */
+.font-bold { font-weight: 700; margin-bottom: 10px; font-size: 13px; }
+.flex-col-gap { display: flex; flex-direction: column; gap: 25px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-25 { margin-bottom: 25px; }
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-25 { margin-top: 25px; }
+.c-red { color: #e11d48 !important; }
+.c-pink { color: #db2777 !important; }
+.c-orange { color: #ea580c !important; }
+
+/* 1. TOPO INSTITUCIONAL */
+.gov-bar { background: #e2e8f0; padding: 8px 40px; display: flex; justify-content: space-between; font-size: 12px; color: #475569; font-weight: 500; }
+.gov-bar .right-links a { color: #475569; margin-left: 20px; }
+.gov-bar .right-links a:hover { color: #0284c7; }
+
+/* 2. CABEÇALHO */
+.main-header { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 25px 40px; 
+    background: #ffffff; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+    position: relative; 
+    z-index: 10; 
+}
+.brand { display: flex; flex-direction: column; }
+.brand h1 { color: #0f172a; font-size: 26px; font-weight: 700; letter-spacing: -0.5px; line-height: 1.2; }
+.brand span { color: #0284c7; font-size: 13px; text-transform: uppercase; font-weight: 600; letter-spacing: 1.5px; margin-top: 2px; }
+
+/* Ajuste de alinhamento para a logo e o título */
+.header-brand-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* ==========================================
+   CORREÇÃO DEFINITIVA: CABEÇALHO (TAMANHO E RESPONSIVIDADE)
+   ========================================== */
+.contagem-logo {
+    position: absolute !important;
+    left: 40px;
+    height: 65px !important; 
+    max-height: 65px;
+    width: auto !important;
+    max-width: 250px;
+    object-fit: contain;
+}
+
+.header-logo {
+    height: 65px !important; 
+    max-height: 65px;
+    width: auto !important;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/* 3. BANNER CENTRAL (CARROSSEL) */
+.hero-banner-container { position: relative; width: 100%; height: 500px; background: #cbd5e1; background-image: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.4)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1920'); background-size: cover; background-position: center; display: flex; align-items: center; overflow: hidden; }
+.slider-wrapper { position: relative; z-index: 2; width: 100%; padding: 0 50px; }
+.slider-track { display: flex; gap: 25px; cursor: grab; transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); padding-bottom: 10px; }
+.slider-track:active { cursor: grabbing; }
+
+/* CARDS DO CARROSSEL */
+.slide-card { min-width: 360px; width: 360px; height: 380px; padding: 35px; border-radius: 16px; box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.15); display: flex; flex-direction: column; justify-content: space-between; user-select: none; color: #ffffff; transition: transform 0.3s ease; }
+.slide-card:hover { transform: translateY(-5px); }
+.card-1 { background: linear-gradient(135deg, #db2777, #be185d); }
+.card-2 { background: linear-gradient(135deg, #7c3aed, #5b21b6); }
+.card-3 { background: linear-gradient(135deg, #ca8a04, #a16207); }
+.card-4 { background: linear-gradient(135deg, #0d9488, #0f766e); }
+.card-5 { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+
+.slide-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; line-height: 1.3; margin-top: 15px;}
+.slide-card ul { list-style-position: inside; font-size: 14px; opacity: 0.95; line-height: 1.6; margin-bottom: 10px; }
+.slide-card p { font-size: 14px; opacity: 0.95; line-height: 1.6; }
+
+/* BOTÕES DO CARROSSEL */
+.btn-ver-conteudo { align-self: flex-start; background: #ffffff; color: #0f172a; padding: 10px 20px; border-radius: 30px; font-size: 13px; font-weight: 700; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+.card-1 .btn-ver-conteudo { color: #db2777; } 
+.card-2 .btn-ver-conteudo { color: #7c3aed; } 
+.card-3 .btn-ver-conteudo { color: #ca8a04; } 
+.card-4 .btn-ver-conteudo { color: #0d9488; }
+.card-5 .btn-ver-conteudo { color: #2563eb; }
+.btn-ver-conteudo:hover { background: #f8fafc; transform: scale(1.05); }
+
+.slide-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; background: #ffffff; border: none; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 10px 20px rgba(0,0,0,0.15); color: #1e293b; font-size: 18px; transition: all 0.3s; }
+.slide-btn:hover { background: #f1f5f9; transform: translateY(-50%) scale(1.1); }
+.btn-prev { left: 20px; } .btn-next { right: 20px; }
+
+/* -------------------------------------------
+   REVELAÇÃO DO CONTEÚDO (Sem o menu de abas)
+--------------------------------------------- */
+.hidden-area { display: none; }
+.visible-area { display: block; animation: slideUpFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+@keyframes slideUpFadeIn {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* BARRA DE CORES TOP */
+.regions-bar-wrapper { padding: 40px 40px 0 40px; background: #f4f7f6; }
+.regions-bar { display: flex; width: 100%; height: 8px; border-radius: 4px; overflow: hidden; margin-bottom: 0px; }
+.chunk { flex: 1; height: 100%; } .c1 { background: #db2777; } .c2 { background: #7c3aed; } .c3 { background: #ca8a04; } .c4 { background: #0d9488; }
+
+/* 5. PAINEL DE CONTEÚDO */
+.dynamic-content { background: #f4f7f6; padding: 40px 40px 80px 40px; }
+.content-panel { 
+    display: none; 
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+.content-panel.active { display: block; }
+.content-panel.show { opacity: 1; transform: translateY(0); }
+
+.grid-two-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.panel-header { margin-bottom: 35px; border-left: 5px solid #0284c7; padding-left: 20px; }
+.panel-header h2 { font-size: 28px; color: #0f172a; font-weight: 800; }
+.panel-header p { color: #475569; font-size: 16px; margin-top: 8px; font-weight: 400; }
+
+.info-box { background: #ffffff; border-radius: 16px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); border: 1px solid #e2e8f0; }
+.info-box h3 { color: #0f172a; margin-bottom: 15px; font-size: 20px; display: flex; align-items: center; gap: 10px; font-weight: 700;}
+.info-box h3 i { color: #0284c7; }
+.info-box ul { list-style: none; }
+.info-box li { margin-bottom: 12px; font-size: 15px; color: #475569; display: flex; gap: 12px; align-items: flex-start;}
+.info-box li i { color: #0284c7; margin-top: 4px; font-size: 14px; }
+.info-box p { color: #475569; font-size: 15px; }
+
+.media-placeholder { background: #ffffff; border: 2px dashed #cbd5e1; border-radius: 16px; min-height: 250px; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #64748b; text-align: center; padding: 30px; transition: all 0.3s; }
+.media-placeholder:hover { border-color: #0284c7; background: #f0f9ff; }
+.media-placeholder i { font-size: 50px; margin-bottom: 15px; color: #94a3b8; }
+.placeholder-title { font-size: 16px; font-weight: 600; color: #0f172a; margin-bottom: 5px; }
+
+/* 6. RODAPÉ */
+.footer { 
+    background: #0f172a; 
+    color: #94a3b8; 
+    padding: 40px 20px; 
+    font-size: 13px; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-content {
+    text-align: center;
+    flex: 1;
+}
+
+.footer strong { 
+    color: #ffffff; 
+    font-size: 16px; 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.footer-logo {
+    height: 80px; 
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   AJUSTES RESPONSIVOS (CELULARES E TABLETS)
+   ========================================== */
+@media (max-width: 900px) {
+    .grid-two-cols { grid-template-columns: 1fr; gap: 30px; }
+    
+    .main-header {
+        flex-direction: column !important;
+        padding: 25px 15px !important;
+    }
+    
+    .contagem-logo {
+        position: static !important; 
+        margin-bottom: 15px;
+        height: 55px !important; 
+    }
+    
+    .header-brand-wrapper {
+        flex-direction: column !important; 
+        gap: 12px !important;
+        text-align: center;
+    }
+    
+    .hero-banner-container { height: auto; padding: 50px 0; }
+    .slider-wrapper { padding: 0 20px; }
+    .slide-card { min-width: 300px; width: 300px; height: auto; padding: 25px; }
+    .dynamic-content { padding: 30px 20px; }
+    .regions-bar-wrapper { padding: 20px 20px 0 20px; }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    .footer-logo {
+        height: 70px; 
+    }
+}
+
+/* ==========================================
+   7. FORMULÁRIO DE ATENDIMENTO E CEP
+   ========================================== */
+.cep-container, .form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.cep-container h3, .form-container h3 {
+    color: #0f172a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cep-container p, .form-container p {
+    color: #475569;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1e293b;
+    transition: all 0.3s ease;
+    background-color: #f8fafc;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #0284c7;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-primary {
+    background: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-primary:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.btn-inline {
+    width: auto;
+    white-space: nowrap;
+}
+
+#cep-msg {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.msg-error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #f87171;
+}
+
+/* Deixa o Nome e o Celular lado a lado no PC, e um debaixo do outro no Celular */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    .btn-inline {
+        width: 100%;
+    }
+}
